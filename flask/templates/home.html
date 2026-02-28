@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Payments Fraud Detection</title>
+    <style>
+        body{
+            font-family: Arial;
+            background:#8fb9cc;
+            margin:0;
+            padding:0;
+            text-align:center;
+        }
+        .nav{
+            position:absolute;
+            top:20px;
+            right:30px;
+        }
+        .btn{
+            padding:10px 18px;
+            border:none;
+            border-radius:6px;
+            background:#3b73a1;
+            color:white;
+            text-decoration:none;
+            margin-left:10px;
+        }
+        .container{
+            margin-top:80px;
+            width:80%;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        h1{
+            font-size:40px;
+        }
+        p{
+            font-size:20px;
+            line-height:1.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+<a class="btn" href="{{ url_for('home') }}">Home</a>
+<a class="btn" href="{{ url_for('predict_page') }}">Predict</a>
+</div>
+
+<div class="container">
+<h1>Online Payments Fraud Detection</h1>
+
+<p>
+The objective of this article is to predict online payments fraud given the various parameters.
+This will be a classification problem since the target variable is fraud.
+We will be using classification algorithms such as Decision Tree, Random Forest,
+SVM and Extra Tree Classifier to train and test the data.
+</p>
+
+</div>
+
+</body>
+</html>
